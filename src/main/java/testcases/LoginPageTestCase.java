@@ -8,7 +8,7 @@ import pages.LoginPage;
 public class LoginPageTestCase extends ProjectSpecificMethods{
 	@Test
 	public void executeLogin() {
-		new LoginPage(driver).
+		new LoginPage(driver,prop).
 		enterUserName().
 		enterPassword().
 		clickLogin();

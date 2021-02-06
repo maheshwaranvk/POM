@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite thread-count="5" name="Suite" verbose="5" parallel="tests">
+
+  <test name="EnglishTest">
+  <parameter name="lang" value="english"></parameter>
+    <classes>
+      <class name="testcases.CreateLead"/>
+    </classes></test>
+  
+  <test name="FrenchTest">
+   <parameter name="lang" value="french"></parameter>
+    <classes>
+      <class name="testcases.CreateLead"/>
+    </classes>
+  </test>
+  
+</suite>

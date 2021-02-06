@@ -3,34 +3,33 @@ package testcases;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-
 import base.ProjectSpecificMethods;
 import pages.LoginPage;
 
-public class CreateLead extends ProjectSpecificMethods{
-	
-	
+public class EditLead extends ProjectSpecificMethods{
+
 	@BeforeTest
 	public void getExcel() {
-		excelFileName="CreateLead1";
+		excelFileName="EditLead";
 
 	}
 	
 	@Test(dataProvider="fetchdata")
-	public void runCreateLead(String cName, String fName, String lName) {
+	public void runEditLead(String leadID) throws InterruptedException {
 		new LoginPage(driver,prop)
 		.enterUserName()
 		.enterPassword()
 		.clickLogin()
 		.clickCrmsfaLink()
 		.clickLeads()
-		.clickCreateLeads()
-		.enterCompName(cName)
-		.enterFirstName(fName)
-		.enterLastName(lName)
-		.clickCreateLeadButton()
-		.viewPage();
+		.clickFindLead()
+		.enterLeadID(leadID)
+		.clickFindLeads()
+		.clickLeadID()
+		.clickEdit()
+		.updateCompaName()
+		.clickUpdateButton();
+		
 
 	}
 }
