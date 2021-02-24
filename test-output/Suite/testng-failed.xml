@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" verbose="5" name="englishTest(failed)" parallel="tests">
-    <parameter name="lang" value="english"/>
-    <classes>
-      <class name="testcases.EditLead">
-        <methods>
-          <include name="runEditLead" invocation-numbers="0"/>
-          <include name="getExcel"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- testcases.EditLead -->
-    </classes>
-  </test> <!-- englishTest(failed) -->
   <test thread-count="5" verbose="5" name="frenchTest(failed)" parallel="tests">
     <parameter name="lang" value="french"/>
     <classes>
@@ -25,4 +13,16 @@
       </class> <!-- testcases.EditLead -->
     </classes>
   </test> <!-- frenchTest(failed) -->
+  <test thread-count="5" verbose="5" name="englishTest(failed)" parallel="tests">
+    <parameter name="lang" value="english"/>
+    <classes>
+      <class name="testcases.EditLead">
+        <methods>
+          <include name="runEditLead" invocation-numbers="0"/>
+          <include name="getExcel"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- testcases.EditLead -->
+    </classes>
+  </test> <!-- englishTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

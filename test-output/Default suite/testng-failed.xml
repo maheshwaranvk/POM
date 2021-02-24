@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.EditLead">
+      <class name="testcases.CreateLead">
         <methods>
-          <include name="runEditLead"/>
-          <include name="getExcel"/>
+          <include name="runCreateLead"/>
           <include name="launchApplication"/>
+          <include name="getExcel"/>
         </methods>
-      </class> <!-- testcases.EditLead -->
+      </class> <!-- testcases.CreateLead -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

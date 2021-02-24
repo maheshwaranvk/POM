@@ -1,69 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16384" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:44:08 IST">
+  <suite name="Default suite" duration-ms="622" started-at="2021-02-21T18:33:22 IST" finished-at="2021-02-21T18:33:23 IST">
     <groups>
     </groups>
-    <test name="englishTest" duration-ms="15126" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:44:07 IST">
-      <class name="testcases.EditLead">
-        <test-method status="PASS" signature="getExcel()[pri:0, instance:testcases.EditLead@1fc2b765]" name="getExcel" is-config="true" duration-ms="22" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:43:52 IST">
+    <test name="Default test" duration-ms="622" started-at="2021-02-21T18:33:22 IST" finished-at="2021-02-21T18:33:23 IST">
+      <class name="testcases.CreateLead">
+        <test-method status="PASS" signature="getExcel()[pri:0, instance:testcases.CreateLead@2de8284b]" name="getExcel" is-config="true" duration-ms="8" started-at="2021-02-21T18:33:22 IST" finished-at="2021-02-21T18:33:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getExcel -->
-        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:testcases.EditLead@1fc2b765]" name="launchApplication" is-config="true" duration-ms="3467" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:43:56 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[english]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="launchApplication(java.lang.String)[pri:0, instance:testcases.CreateLead@2de8284b]" name="launchApplication" is-config="true" duration-ms="-1613912603234" started-at="2021-02-21T18:33:23 IST" finished-at="1970-01-01T05:30:00 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'lang' is required by BeforeMethod on method launchApplication but has not been marked @Optional or defined
+in C:\Users\Mahesh\AppData\Local\Temp\testng-eclipse--581776916\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'lang' is required by BeforeMethod on method launchApplication but has not been marked @Optional or defined
+in C:\Users\Mahesh\AppData\Local\Temp\testng-eclipse--581776916\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="runEditLead(java.lang.String)[pri:0, instance:testcases.EditLead@1fc2b765]" name="runEditLead" duration-ms="11163" started-at="2021-02-02T21:43:56 IST" data-provider="fetchdata" finished-at="2021-02-02T21:44:07 IST">
+        <test-method status="SKIP" signature="runCreateLead(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.CreateLead@2de8284b]" name="runCreateLead" duration-ms="0" started-at="2021-02-21T18:33:23 IST" data-provider="fetchdata" finished-at="2021-02-21T18:33:23 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10010]]>
+                <![CDATA[Wirpo]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runEditLead -->
-      </class> <!-- testcases.EditLead -->
-    </test> <!-- englishTest -->
-    <test name="frenchTest" duration-ms="16384" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:44:08 IST">
-      <class name="testcases.EditLead">
-        <test-method status="PASS" signature="getExcel()[pri:0, instance:testcases.EditLead@481a15ff]" name="getExcel" is-config="true" duration-ms="22" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:43:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getExcel -->
-        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:testcases.EditLead@481a15ff]" name="launchApplication" is-config="true" duration-ms="3482" started-at="2021-02-02T21:43:52 IST" finished-at="2021-02-02T21:43:56 IST">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[french]]>
+                <![CDATA[Karthik]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="runEditLead(java.lang.String)[pri:0, instance:testcases.EditLead@481a15ff]" name="runEditLead" duration-ms="12410" started-at="2021-02-02T21:43:56 IST" data-provider="fetchdata" finished-at="2021-02-02T21:44:08 IST">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[10010]]>
+                <![CDATA[Gunasekaran]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'lang' is required by BeforeMethod on method launchApplication but has not been marked @Optional or defined
+in C:\Users\Mahesh\AppData\Local\Temp\testng-eclipse--581776916\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'lang' is required by BeforeMethod on method launchApplication but has not been marked @Optional or defined
+in C:\Users\Mahesh\AppData\Local\Temp\testng-eclipse--581776916\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runEditLead -->
-      </class> <!-- testcases.EditLead -->
-    </test> <!-- frenchTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runCreateLead -->
+      </class> <!-- testcases.CreateLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
